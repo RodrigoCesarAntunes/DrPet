@@ -1,0 +1,1 @@
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet.UWP\DrPet.UWP.csproj;x86

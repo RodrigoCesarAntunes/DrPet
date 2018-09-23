@@ -1,0 +1,14 @@
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.csprojAssemblyReference.cache
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\CadastroForm.xaml.g.cs
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\LoginForm.xaml.g.cs
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.AssemblyInfo.cs
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\bin\Debug\netstandard2.0\DrPet.deps.json
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\bin\Debug\netstandard2.0\DrPet.dll
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\bin\Debug\netstandard2.0\DrPet.pdb
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.dll
+C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.pdb
