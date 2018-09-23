@@ -13,10 +13,12 @@ namespace DrPet.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class LoginForm : ContentView
 	{
+        
 		public LoginForm ()
 		{
 			InitializeComponent();
             Init();
+            
 		}
 
         public void Init()
@@ -32,8 +34,20 @@ namespace DrPet.Views
         }
         public async void Entrar_Clicked(object sender, EventArgs e)
         {
-            //DrPet.Controller.Login.Login logar = new Controller.Login.Login();
-            //await logar.GetUsuariotAsync(entryEmail.Text,entrySenha.Text);
+            string resposta;
+            indicadorAtividade.IsRunning = true;
+            DrPet.Controller.Login.Login logar = new Controller.Login.Login();
+            resposta = await logar.GetUsuariotAsync(entryEmail.Text, entrySenha.Text);
+            if (resposta == "sucesso")
+            {
+                App.Current.MainPage = new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial());
+                indicadorAtividade.IsRunning = false;
+            }
+            else
+            {
+               await App.Current.MainPage.DisplayAlert("Erro","Erro ao tentar se conectar: " + resposta, "OK");
+                indicadorAtividade.IsRunning = false;
+            }
             
         }
 

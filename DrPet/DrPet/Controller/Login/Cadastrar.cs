@@ -19,13 +19,23 @@ namespace DrPet.Controller.Login
             client.MaxResponseContentBufferSize = 256000;
         }
 
-        public async Task CadastrarCliente(Usuario usuario)
+        public async Task<String> CadastrarCliente(Usuario usuario)
         {
             var json = JsonConvert.SerializeObject(usuario);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
             HttpResponseMessage response = null;
 
             response = await client.PostAsync(Constants.URI, content);
+            if(response.IsSuccessStatusCode)
+            {
+                return "Cliente cadastrado com sucesso";
+            }
+            else
+            {
+                string resposta = response.Content.ReadAsStringAsync().ToString();
+                return resposta;
+            }
+                
         }
 
         public void SetNovoUsuario()

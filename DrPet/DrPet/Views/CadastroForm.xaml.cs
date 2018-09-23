@@ -29,11 +29,17 @@ namespace DrPet.Views
             entryIdade.Completed += (s, e) => entryEndereco.Focus();
             entryEndereco.Completed += (s, e) => entryCEP.Focus();
             entryCEP.Completed += (s, e) => entrySenha.Focus();
-            entrySenha.Completed += (s, e) => btnConcluirCadastro_Clicked(s,e);
+            entrySenha.Completed += (s, e) => entrySenha2.Focus();
+            entrySenha2.Completed += (s, e) => btnConcluirCadastro_Clicked(s,e);
         }
 
         private async void btnConcluirCadastro_Clicked(object sender, EventArgs e)
         {
+            if(ChecarSenha())
+            {
+                await App.Current.MainPage.DisplayAlert("Senhas diferentes", "As duas senhas precisam ser iguais", "OK");
+                return;
+            }
             Autenticacao autenticacao = new Autenticacao();
             autenticacao.Email = entryEmail.Text;
             autenticacao.Senha = entrySenha.Text;
@@ -56,11 +62,12 @@ namespace DrPet.Views
             usuario.CEP = entryCEP.Text;
             try
             {
+                String resp;
                 DrPet.Controller.Login.Cadastrar cadastrar = new Controller.Login.Cadastrar();
                 DesabilitarForms(false);
-                await cadastrar.CadastrarCliente(usuario);
+                resp = await cadastrar.CadastrarCliente(usuario);
                 DesabilitarForms(true);
-                await App.Current.MainPage.DisplayAlert("Sucesso", "Usuario cadastrado com sucesso", "OK");
+                await App.Current.MainPage.DisplayAlert("Mensagem", resp, "OK");
             }
             catch(Exception erro)
             {
@@ -81,6 +88,15 @@ namespace DrPet.Views
             entryEndereco.IsEnabled = isHabilitado;
             entryCEP.IsEnabled = isHabilitado;
             entrySenha.IsEnabled = isHabilitado;
+        }
+
+        private bool ChecarSenha()
+        {
+            if(entrySenha.Text != entrySenha2.Text)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

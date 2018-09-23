@@ -32,11 +32,17 @@ namespace DrPet.Controller.Login
                 HttpResponseMessage response = await client.GetAsync(path);
                 if (response.IsSuccessStatusCode)
                 {
-                    usuariojson = await client.GetStringAsync(path);
+                    var conteudo = await response.Content.ReadAsStringAsync();
+                    _usuario = JsonConvert.DeserializeObject<Usuario>(conteudo);
+                    UsuarioAtivo = _usuario;
+                    return "sucesso";
                 }
-                _usuario = (Usuario)JsonConvert.DeserializeObject(usuariojson);
-                UsuarioAtivo = _usuario;
-                return "sucesso";
+                else
+                {
+                    string resp = response.Content.ReadAsStringAsync().ToString();
+                    return resp;
+                }
+                
             }
             catch(Exception erro)
             {

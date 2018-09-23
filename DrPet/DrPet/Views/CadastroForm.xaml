@@ -31,6 +31,9 @@
 
                     <Label x:Name="lblSenha" Text="Senha" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Entry x:Name="entrySenha" Placeholder="Senha" IsPassword="True"></Entry>
+                    
+                    <Label x:Name="lblSenha2" Text="Senha" VerticalOptions="Start" HorizontalOptions="Start" />
+                    <Entry x:Name="entrySenha2" Placeholder="Confirmar Senha" IsPassword="True"></Entry>
                 </StackLayout>
                 <Button x:Name="btnConcluirCadastro" Text="Concluir Cadastro" Clicked="btnConcluirCadastro_Clicked"/>
 

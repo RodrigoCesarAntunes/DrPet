@@ -15,7 +15,7 @@ namespace DrPet
             {
                 Content = new DrPet.Views.LoginForm()
             });
-
+            
             //MainPage = new NavigationPage(new DrPet.Views.CadastroForm());
         }
 

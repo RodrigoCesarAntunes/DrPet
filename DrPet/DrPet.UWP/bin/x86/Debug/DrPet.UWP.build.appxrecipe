@@ -538,6 +538,9 @@
     <AppxPackagedFile Include="C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\bin\Debug\netstandard2.0\DrPet.dll">
       <PackagePath>DrPet.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet.UWP\Assets\cachorro.png">
+      <PackagePath>Assets\cachorro.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
