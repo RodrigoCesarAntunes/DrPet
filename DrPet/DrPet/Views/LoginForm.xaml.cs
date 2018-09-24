@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -21,6 +17,8 @@ namespace DrPet.Views
             
 		}
 
+        
+
         public void Init()
         {
             BackgroundColor = Constants.BackGroundColor;
@@ -37,6 +35,8 @@ namespace DrPet.Views
             string resposta;
             indicadorAtividade.IsRunning = true;
             DrPet.Controller.Login.Login logar = new Controller.Login.Login();
+
+            
             resposta = await logar.GetUsuariotAsync(entryEmail.Text, entrySenha.Text);
             if (resposta == "sucesso")
             {
@@ -45,6 +45,7 @@ namespace DrPet.Views
             }
             else
             {
+
                await App.Current.MainPage.DisplayAlert("Erro","Erro ao tentar se conectar: " + resposta, "OK");
                 indicadorAtividade.IsRunning = false;
             }

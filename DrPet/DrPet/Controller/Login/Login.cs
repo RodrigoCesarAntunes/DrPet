@@ -29,7 +29,8 @@ namespace DrPet.Controller.Login
             Usuario _usuario = null;
             try
             {
-                HttpResponseMessage response = await client.GetAsync(path);
+                
+                HttpResponseMessage response = await client.GetAsync(path, Constants.getCancellationToken());
                 if (response.IsSuccessStatusCode)
                 {
                     var conteudo = await response.Content.ReadAsStringAsync();

@@ -25,7 +25,7 @@ namespace DrPet.Controller.Login
             var content = new StringContent(json, Encoding.UTF8, "application/json");
             HttpResponseMessage response = null;
 
-            response = await client.PostAsync(Constants.URI, content);
+            response = await client.PostAsync(Constants.URI, content, Constants.getCancellationToken());
             if(response.IsSuccessStatusCode)
             {
                 return "Cliente cadastrado com sucesso";

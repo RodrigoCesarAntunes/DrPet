@@ -824,11 +824,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rodrigo\\Documents\\AppRepositorio\\DrPet\\DrPet\\DrPet.Android\\DrPet.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Rodrigo\\Documents\\App Repositorio\\DrPet\\DrPet\\DrPet.Android\\DrPet.Android.csproj",
       "projectName": "DrPet.Android",
-      "projectPath": "C:\\Users\\Rodrigo\\Documents\\AppRepositorio\\DrPet\\DrPet\\DrPet.Android\\DrPet.Android.csproj",
+      "projectPath": "C:\\Users\\Rodrigo\\Documents\\App Repositorio\\DrPet\\DrPet\\DrPet.Android\\DrPet.Android.csproj",
       "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rodrigo\\Documents\\AppRepositorio\\DrPet\\DrPet\\DrPet.Android\\obj\\",
+      "outputPath": "C:\\Users\\Rodrigo\\Documents\\App Repositorio\\DrPet\\DrPet\\DrPet.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -845,8 +845,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\Rodrigo\\Documents\\AppRepositorio\\DrPet\\DrPet\\DrPet\\DrPet.csproj": {
-              "projectPath": "C:\\Users\\Rodrigo\\Documents\\AppRepositorio\\DrPet\\DrPet\\DrPet\\DrPet.csproj"
+            "C:\\Users\\Rodrigo\\Documents\\App Repositorio\\DrPet\\DrPet\\DrPet\\DrPet.csproj": {
+              "projectPath": "C:\\Users\\Rodrigo\\Documents\\App Repositorio\\DrPet\\DrPet\\DrPet\\DrPet.csproj"
             }
           }
         }

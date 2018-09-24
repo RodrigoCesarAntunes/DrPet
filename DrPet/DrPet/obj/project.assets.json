@@ -389,11 +389,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rodrigo\\Documents\\AppRepositorio\\DrPet\\DrPet\\DrPet\\DrPet.csproj",
+      "projectUniqueName": "C:\\Users\\Rodrigo\\Documents\\App Repositorio\\DrPet\\DrPet\\DrPet\\DrPet.csproj",
       "projectName": "DrPet",
-      "projectPath": "C:\\Users\\Rodrigo\\Documents\\AppRepositorio\\DrPet\\DrPet\\DrPet\\DrPet.csproj",
+      "projectPath": "C:\\Users\\Rodrigo\\Documents\\App Repositorio\\DrPet\\DrPet\\DrPet\\DrPet.csproj",
       "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rodrigo\\Documents\\AppRepositorio\\DrPet\\DrPet\\DrPet\\obj\\",
+      "outputPath": "C:\\Users\\Rodrigo\\Documents\\App Repositorio\\DrPet\\DrPet\\DrPet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
