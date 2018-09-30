@@ -10,7 +10,7 @@ namespace DrPet.Model
         public string Nome { get; set; }
         public string What_Pet { get; set; }
         public string Raca { get; set; }
-        public Nullable<decimal> Peso { get; set; }
+        public string Peso { get; set; }
         public string Tamanho { get; set; }
         public string Descricao { get; set; }
         public string Genero { get; set; }

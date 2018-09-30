@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DrPet.Views.Pets.CadastarEditarPetForm">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="90" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Nome:* " FontSize="Medium" Grid.Column="0" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Entry x:Name="entryNome" Placeholder="Nome" 
+                   Grid.Column="1" Grid.Row="0"/>
+
+            <Label Text="Tipo:* " FontSize="Medium" Grid.Column="0" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Entry x:Name="entryTipo" Placeholder="Tipo"
+                   Grid.Column="1" Grid.Row="1"/>
+
+            <Label Text="Raça: " FontSize="Medium" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Entry x:Name="entryRaca" Placeholder="Raça"
+                   Grid.Column="1" Grid.Row="2"/>
+
+            <Label Text="Peso:* " FontSize="Medium" Grid.Column="0" Grid.Row="3" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Picker x:Name="pickerPeso" Grid.Column="1" Grid.Row="3"></Picker>
+
+            <Label Text="Tamanho: " FontSize="Medium" Grid.Column="0" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Picker x:Name="pickerTamanho" Grid.Column="1" Grid.Row="4"></Picker>
+
+            <Label Text="Sexo:* " FontSize="Medium" Grid.Column="0" Grid.Row="5" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Picker x:Name="pickerGenero" Grid.Column="1" Grid.Row="5"/>
+
+            <Label Text="Idade:* " FontSize="Medium" Grid.Column="0" Grid.Row="6" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Entry x:Name="entryIdade" Placeholder="Idade" Grid.Column="1" Grid.Row="6"/>
+
+            <Label Text="Descrição: " FontSize="Medium" Grid.Column="0" Grid.Row="7" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Editor x:Name="editorDescricao" Grid.Column="1" Grid.Row="7" IsSpellCheckEnabled="True"/>
+
+            <Button Text="Concluir" Grid.Column="1" Grid.Row="8" 
+                    x:Name="btnConcluirCadastro" Clicked="btnConcluirCadastro_Clicked"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

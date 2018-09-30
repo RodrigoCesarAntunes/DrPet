@@ -24,18 +24,19 @@ namespace DrPet.Controller.Login
         public async Task<String> GetUsuariotAsync(string email, string senha)
         {
             
-            path = Constants.URI + "?email=" + email + "&senha=" + senha;
-            string usuariojson = "";
+            path = Constants.URIPessoaFisica + "?email=" + email + "&senha=" + senha;
+            
             Usuario _usuario = null;
             try
             {
-                
-                HttpResponseMessage response = await client.GetAsync(path, Constants.getCancellationToken());
+                Model.Token.TokenDeCancelamento tokenDeCancelamento = new Model.Token.TokenDeCancelamento();
+                HttpResponseMessage response = await client.GetAsync(path, tokenDeCancelamento.getCancellationToken());
                 if (response.IsSuccessStatusCode)
                 {
                     var conteudo = await response.Content.ReadAsStringAsync();
                     _usuario = JsonConvert.DeserializeObject<Usuario>(conteudo);
                     UsuarioAtivo = _usuario;
+                    //UsuarioAtivo.Autenticacao.Senha = senha;
                     return "sucesso";
                 }
                 else

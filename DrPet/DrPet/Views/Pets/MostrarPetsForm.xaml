@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DrPet.Views.Pets.MostrarPetsForm">
+    <StackLayout>
+  <ListView x:Name="MyListView"
+            ItemsSource="{Binding Mascote}"
+            
+            ItemTapped="Handle_ItemTapped"
+            CachingStrategy="RecycleElement">
+            
+    <!--Built in Cells-->
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60" />
+                            <!--<RowDefinition Height="*" />-->
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Dog_Perfil.png"  VerticalOptions="Start" HorizontalOptions="Start" Grid.Row="0" Grid.Column="0"></Image>
+                        <Label Text="Nome:" FontSize="14" Grid.Column="1" Grid.Row="0" VerticalOptions="Start" HorizontalOptions="Start"/>
+                        <Label Text="{Binding Nome}" FontSize="16" FontAttributes="Bold" Grid.Column="2" Grid.Row="0" VerticalOptions="Start" HorizontalOptions="Start"/>
+                        <Label Text="Raça:" FontSize="14" Grid.Column="1" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Start"/>
+                        <Label Text="{Binding Raca}" FontSize="16" FontAttributes="Bold" Grid.Column="2" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Start"/>
+                        <Label Text="Tipo:" FontSize="14" Grid.Column="1" Grid.Row="0" 
+                               VerticalOptions="End" HorizontalOptions="Start" Margin="0,0,0,20"/>
+                        <Label Text="{Binding What_Pet}" 
+                               FontSize="16" FontAttributes="Bold" 
+                               Grid.Column="2" Grid.Row="0" 
+                               VerticalOptions="End" HorizontalOptions="Start" 
+                               Margin="0,0,0,20" />
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+        <Image  Source="Plus_Pet.png" HeightRequest="100" WidthRequest="100" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="AddPet_Clicked" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+    </StackLayout>
+</ContentPage>

@@ -23,7 +23,7 @@
             <StackLayout x:Name="Controles" VerticalOptions="StartAndExpand">
                 <ActivityIndicator x:Name="indicadorAtividade"  VerticalOptions="Center" HorizontalOptions="Center" Color="White"/>
                 <Label x:Name="lblEmail" Text="E-mail" />
-                <Entry x:Name="entryEmail" Placeholder="Email" Keyboard="Email"></Entry>
+                <Entry x:Name="entryEmail" Placeholder="Email" Keyboard="Email" ></Entry>
                 <Label x:Name="lblSenha" Text="Senha" />
                 <Entry x:Name="entrySenha" Placeholder="Senha" IsPassword="True"></Entry>
                 <Button x:Name="btnEntrar" Text="Entrar" Clicked="Entrar_Clicked"/>

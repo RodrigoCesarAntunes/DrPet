@@ -16,10 +16,10 @@ namespace DrPet.Views.PaginaInicial {
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\PaginaInicial\\PaginaInicial.xaml")]
     public partial class PaginaInicial : global::Xamarin.Forms.MasterDetailPage {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::DrPet.Views.PaginaInicial.PaginaInicialMaster MasterPage;
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PaginaInicial));
             MasterPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DrPet.Views.PaginaInicial.PaginaInicialMaster>(this, "MasterPage");

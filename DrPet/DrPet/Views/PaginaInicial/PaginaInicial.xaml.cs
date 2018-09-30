@@ -33,9 +33,9 @@ namespace DrPet.Views.PaginaInicial
 
             var page = (Page)Activator.CreateInstance(item.TargetType);
             page.Title = item.Title;
-
+            
             //Navigation.PushAsync(page);
-            Detail = new NavigationPage(page);
+            Detail = new NavigationPage(new Pets.MostrarPetsForm());
             IsPresented = false;
 
             MasterPage.ListView.SelectedItem = null;
