@@ -18,6 +18,7 @@ C:\Users\Rodrigo\Documents\AppRepositorio\DrPet\DrPet\DrPet\obj\Debug\netstandar
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\bin\Debug\netstandard2.0\DrPet.deps.json
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\bin\Debug\netstandard2.0\DrPet.dll
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\bin\Debug\netstandard2.0\DrPet.pdb
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.csprojAssemblyReference.cache
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\CadastroForm.xaml.g.cs
@@ -25,12 +26,11 @@ C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstanda
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\PaginaInicial\PaginaInicial.xaml.g.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\PaginaInicial\PaginaInicialDetail.xaml.g.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\PaginaInicial\PaginaInicialMaster.xaml.g.cs
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\Pets\CadastarEditarPetForm.xaml.g.cs
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\Pets\MostrarPetsForm.xaml.g.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.csproj.CoreCompileInputs.cache
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.AssemblyInfoInputs.cache
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.AssemblyInfo.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.dll
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.pdb
-C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.csprojAssemblyReference.cache
-C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\Pets\MostrarPetsForm.xaml.g.cs
-C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\Pets\CadastarEditarPetForm.xaml.g.cs

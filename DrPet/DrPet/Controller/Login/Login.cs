@@ -23,12 +23,21 @@ namespace DrPet.Controller.Login
                 if (!App.Current.Properties.ContainsKey("IsLoggedIn"))
                     return false;
                 else
-                    return true;
+                {
+                    try
+                    {
+                        return Convert.ToBoolean((string)App.Current.Properties["IsLoggedIn"]);
+                    }
+                    catch(Exception e)
+                    {
+                        return false;
+                    }
+                }   
             }
             set
             {
                 EstaLogado = value;
-                this.EstaLogado = JsonConvert.DeserializeObject<bool>((string)App.Current.Properties["IsLoggedIn"]);
+                this.EstaLogado = Convert.ToBoolean((string)App.Current.Properties["IsLoggedIn"]);
             }
         }
 
@@ -37,8 +46,11 @@ namespace DrPet.Controller.Login
             client = new HttpClient();
             senha = _senha;
             email = _email;
-            App.Current.Properties.Add("UserDetail", null);
-            App.Current.Properties.Add("IsLoggedIn", false);
+            if(!App.Current.Properties.ContainsKey("UserDetail"))
+            {
+                App.Current.Properties.Add("UserDetail", null);
+                App.Current.Properties.Add("IsLoggedIn", false);
+            }
             GuardarInformacoes();
         }
 
@@ -51,9 +63,7 @@ namespace DrPet.Controller.Login
                 email = aut.Email;
                 senha = aut.Senha;
             }
-            
         }
-
 
         public async Task<String> GetUsuariotAsync()
         {
