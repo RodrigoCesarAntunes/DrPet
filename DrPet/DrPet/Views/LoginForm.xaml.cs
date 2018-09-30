@@ -9,16 +9,27 @@ namespace DrPet.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class LoginForm : ContentView
 	{
-        
-		public LoginForm ()
+        private DrPet.Controller.Login.Login logar;
+
+        public LoginForm ()
 		{
-			InitializeComponent();
+
+            EntrarDireto();
+            InitializeComponent();
             Init();
-            
 		}
 
+        private async void EntrarDireto()
+        {
+            logar = new Controller.Login.Login();
+            if (logar.EstaLogado)
+            {
+                await logar.GetUsuariotAsync();
+                App.Current.MainPage = new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial());
+            }
+                
+        }
         
-
         public void Init()
         {
             BackgroundColor = Constants.BackGroundColor;
@@ -34,10 +45,9 @@ namespace DrPet.Views
         {
             string resposta;
             indicadorAtividade.IsRunning = true;
-            DrPet.Controller.Login.Login logar = new Controller.Login.Login();
-
+            logar = new Controller.Login.Login(entryEmail.Text, entrySenha.Text);
             
-            resposta = await logar.GetUsuariotAsync(entryEmail.Text, entrySenha.Text);
+            resposta = await logar.GetUsuariotAsync();
             if (resposta == "sucesso")
             {
                 App.Current.MainPage = new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial());

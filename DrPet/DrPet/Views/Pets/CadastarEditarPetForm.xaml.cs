@@ -64,6 +64,8 @@ namespace DrPet.Views.Pets
 
             await adicionar.Add(pet);
 
+            Login logar = new Login();
+            await logar.GetUsuariotAsync();
             await App.Current.MainPage.Navigation.PushAsync(new Pets.MostrarPetsForm());
         }
     }
