@@ -13,7 +13,6 @@ namespace DrPet.Views
 
         public LoginForm ()
 		{
-
             EntrarDireto();
             InitializeComponent();
             Init();
@@ -24,8 +23,9 @@ namespace DrPet.Views
             logar = new Controller.Login.Login();
             if (logar.EstaLogado)
             {
-                await logar.GetUsuariotAsync();
-                App.Current.MainPage = new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial());
+                string resposta = await logar.GetUsuariotAsync();
+                if (resposta == "sucesso")
+                    App.Current.MainPage = new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial());   
             }
                 
         }
@@ -55,8 +55,7 @@ namespace DrPet.Views
             }
             else
             {
-
-               await App.Current.MainPage.DisplayAlert("Erro","Erro ao tentar se conectar: " + resposta, "OK");
+               await App.Current.MainPage.DisplayAlert("Erro","Erro ao tentar se conectar: tente denovo mais tarde" + resposta, "OK");
                 indicadorAtividade.IsRunning = false;
             }
             
