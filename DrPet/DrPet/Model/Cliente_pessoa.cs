@@ -6,12 +6,17 @@ namespace DrPet.Model
 {
     public class Cliente_pessoa
     {
+        public Cliente_pessoa()
+        {
+            Consulta = new HashSet<Consulta>();
+            Pets = new HashSet<Pets>();
+        }
 
-        public int ID { get; set; }
-        public int Usuario_ID { get; set; }
-        public string Usuario_Email { get; set; }
+        public int Id { get; set; }
+        public string UsuarioEmail { get; set; }
 
-        public  Usuario Usuario { get; set; }
-        public virtual List<Pets> pets { get; set; }
+        public Usuario Usuario { get; set; }
+        public ICollection<Consulta> Consulta { get; set; }
+        public ICollection<Pets> Pets { get; set; }
     }
 }

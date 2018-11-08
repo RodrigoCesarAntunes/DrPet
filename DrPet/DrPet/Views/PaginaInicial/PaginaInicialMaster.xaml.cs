@@ -25,7 +25,7 @@ namespace DrPet.Views.PaginaInicial
 
             BindingContext = new PaginaInicialMasterViewModel();
             ListView = MenuItemsListView;
-            lblUsuario.Text = Login.UsuarioAtivo.Nome;
+            lblUsuario.Text = Login.UsuarioAtivo.Usuario.Nome;
             IconeUsuario.HeightRequest = DrPet.Model.Constants.loginIconHeight;
         }
 
@@ -38,11 +38,11 @@ namespace DrPet.Views.PaginaInicial
                 
                 MenuItems = new ObservableCollection<PaginaInicialMenuItem>(new[]
                 {
-                    new PaginaInicialMenuItem { Id = 0, Title = "Meus Pets" },
-                    new PaginaInicialMenuItem { Id = 1, Title = "Consultas" },
-                    new PaginaInicialMenuItem { Id = 2, Title = "Dados Cadastrais" },
-                    new PaginaInicialMenuItem { Id = 3, Title = "Cadastrar seu Consultório" },
-                    new PaginaInicialMenuItem { Id = 4, Title = "Sobre nós" },
+                    new PaginaInicialMenuItem { Id = 0, Title = "Pagina Inicial" },
+                    new PaginaInicialMenuItem { Id = 1, Title = "Meus Pets" },
+                    new PaginaInicialMenuItem { Id = 2, Title = "Consultas" },
+                    new PaginaInicialMenuItem { Id = 3, Title = "Configurações" },
+                    new PaginaInicialMenuItem { Id = 4, Title = "Sobre" },
                 });
 
                

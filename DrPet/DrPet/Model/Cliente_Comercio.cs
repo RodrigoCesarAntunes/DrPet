@@ -7,13 +7,18 @@ namespace DrPet.Model
     public class Cliente_comercio
     {
 
-        public int ID { get; set; }
-        public string CNPJ { get; set; }
-        public int Usuario_ID { get; set; }
-        public string Usuario_cpf_cnpj { get; set; }
+        public Cliente_comercio()
+        {
+            Consulta = new HashSet<Consulta>();
+            Services = new HashSet<Services>();
+        }
 
-        public virtual Usuario Usuario { get; set; }
-        public virtual List<Consulta> Consulta { get; set; }
-        public virtual List<Services> Services { get; set; }
+        public int Id { get; set; }
+        public decimal? SaldoEmConta { get; set; }
+        public string UsuarioEmail { get; set; }
+
+        public Usuario Usuario { get; set; }
+        public ICollection<Consulta> Consulta { get; set; }
+        public ICollection<Services> Services { get; set; }
     }
 }

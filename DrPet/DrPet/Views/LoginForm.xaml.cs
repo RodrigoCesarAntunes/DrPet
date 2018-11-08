@@ -16,7 +16,9 @@ namespace DrPet.Views
             EntrarDireto();
             InitializeComponent();
             Init();
-		}
+
+
+        }
 
         private async void EntrarDireto()
         {
@@ -25,7 +27,11 @@ namespace DrPet.Views
             {
                 string resposta = await logar.GetUsuariotAsync();
                 if (resposta == "sucesso")
-                    App.Current.MainPage = new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial());   
+                    App.Current.MainPage = new DrPet.Views.PaginaInicial.PaginaInicial();
+                //await Navigation.PushModalAsync(new DrPet.Views.PaginaInicial.PaginaInicial());
+                //App.Current.MainPage = new DrPet.Views.PaginaInicial.PaginaInicial();
+
+                
             }
                 
         }
@@ -50,7 +56,8 @@ namespace DrPet.Views
             resposta = await logar.GetUsuariotAsync();
             if (resposta == "sucesso")
             {
-                App.Current.MainPage = new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial());
+                App.Current.MainPage = new DrPet.Views.PaginaInicial.PaginaInicial();
+                //new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial());
                 indicadorAtividade.IsRunning = false;
             }
             else
@@ -66,7 +73,7 @@ namespace DrPet.Views
             try
             {
                 //App.Current.MainPage = new NavigationPage(new ContentPage { Content = new DrPet.Views.CadastroForm() });
-                await Navigation.PushAsync(new ContentPage { Content = new DrPet.Views.CadastroForm() });
+                await Navigation.PushAsync(new ContentPage { Content = new DrPet.Views.CadastroForm(), Title= "Criar Conta" });
             }
             catch(Exception erro)
             {

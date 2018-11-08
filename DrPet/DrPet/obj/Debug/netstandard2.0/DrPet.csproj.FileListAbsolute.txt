@@ -22,6 +22,7 @@ C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstanda
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\CadastroForm.xaml.g.cs
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\LoginForm.xaml.g.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\PaginaInicial\PaginaInicial.xaml.g.cs
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\PaginaInicial\PaginaInicialDetail.xaml.g.cs
@@ -34,3 +35,4 @@ C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstanda
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.dll
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\DrPet.pdb
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\obj\Debug\netstandard2.0\Views\Pets\MascoteForm.xaml.g.cs

@@ -6,10 +6,10 @@ namespace DrPet.Model
 {
     public class Pet_fotos
     {
-        public int id { get; set; }
-        public string fotoCaminho { get; set; }
-        public int pet_id { get; set; }
+        public int Id { get; set; }
+        public string FotoCaminho { get; set; }
+        public int PetId { get; set; }
 
-        public Pets pets { get; set; }
+        public Pets Pet { get; set; }
     }
 }

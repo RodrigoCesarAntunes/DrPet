@@ -41,24 +41,20 @@ namespace DrPet.Views.Pets
 
         private async void btnConcluirCadastro_Clicked(object sender, EventArgs e)
         {
-            string sexo = "";
-            if ((string)pickerGenero.SelectedItem == "Macho")
-                sexo = "M";
-            else
-                sexo = "F";
              
             Model.Pets pet = new Model.Pets();
             pet.Nome = entryNome.Text;
             pet.Raca = entryRaca.Text;
-            pet.What_Pet = entryTipo.Text;
-            pet.Idade = Convert.ToInt16(entryIdade.Text);
+            pet.Especie = entryTipo.Text;
+            pet.Idade = entryIdade.Text;
             pet.Tamanho = (string)pickerTamanho.SelectedItem;
             pet.Peso = (string)pickerPeso.SelectedItem;
-            pet.Genero = sexo;
+            pet.Genero = (string)pickerGenero.SelectedItem;
             pet.Descricao = editorDescricao.Text;
+            pet.ClientePessoaEmail = Login.UsuarioAtivo.UsuarioEmail;
 
-            pet.Cliente_pessoa = Login.UsuarioAtivo.Cliente_pessoa[0];
-            pet.Cliente_pessoa.Usuario = Login.UsuarioAtivo;
+            pet.ClientePessoa = Login.UsuarioAtivo;
+            pet.ClientePessoa.Usuario = Login.UsuarioAtivo.Usuario;
 
             Controller.Mascotes.Adicionar adicionar = new Controller.Mascotes.Adicionar();
 
@@ -66,7 +62,7 @@ namespace DrPet.Views.Pets
 
             Login logar = new Login();
             await logar.GetUsuariotAsync();
-            await App.Current.MainPage.Navigation.PushAsync(new Pets.MostrarPetsForm());
+            App.Current.MainPage = new NavigationPage(new Pets.MostrarPetsForm());
         }
     }
 }

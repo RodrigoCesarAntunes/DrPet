@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.Net;
 
 namespace DrPet.Droid
 {
@@ -16,6 +17,9 @@ namespace DrPet.Droid
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            ServicePointManager.ServerCertificateValidationCallback +=
+                delegate { return true; };
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
@@ -24,24 +28,24 @@ namespace DrPet.Droid
             LoadApplication(new App());
         }
 
-        public override void OnBackPressed()
-        {
-            if (doubleBackToExitPressedOnce)
-            {
-                base.OnBackPressed();
-                Java.Lang.JavaSystem.Exit(0);
-                return;
-            }
+        //public override void OnBackPressed()
+        //{
+        //    if (doubleBackToExitPressedOnce)
+        //    {
+        //        base.OnBackPressed();
+        //        Java.Lang.JavaSystem.Exit(0);
+        //        return;
+        //    }
 
 
-            this.doubleBackToExitPressedOnce = true;
-            Toast.MakeText(this, "Aperte denovo para sair", ToastLength.Short).Show();
+        //    this.doubleBackToExitPressedOnce = true;
+        //    Toast.MakeText(this, "Aperte denovo para sair", ToastLength.Short).Show();
 
-            new Handler().PostDelayed(() =>
-            {
-                doubleBackToExitPressedOnce = false;
-            }, 2000);
-        }
+        //    new Handler().PostDelayed(() =>
+        //    {
+        //        doubleBackToExitPressedOnce = false;
+        //    }, 2000);
+        //}
     }
 
 }

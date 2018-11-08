@@ -21,7 +21,7 @@ namespace DrPet.Views.Pets
         {
             InitializeComponent();
             listarPets();
-            Mascote = DrPet.Controller.Login.Login.UsuarioAtivo.Cliente_pessoa[0].pets;
+            Mascote = DrPet.Controller.Login.Login.UsuarioAtivo.Pets.ToList();
             MyListView.ItemsSource = Mascote;
             MyListView.HasUnevenRows = true;
         }
@@ -30,9 +30,8 @@ namespace DrPet.Views.Pets
         {
             if (e.Item == null)
                 return;
-
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
-
+            var petSelecionado = e.Item as Model.Pets;
+            //await DisplayAlert("selected", "An item was tapped.", "OK");
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
         }
@@ -42,7 +41,12 @@ namespace DrPet.Views.Pets
             
             Items = new ObservableCollection<string>();
             Raca = new ObservableCollection<string>();
-            foreach (var pet in DrPet.Controller.Login.Login.UsuarioAtivo.Cliente_pessoa[0].pets)
+            if (DrPet.Controller.Login.Login.UsuarioAtivo.Pets ==null)
+            {
+                return;
+            }
+               
+            foreach (var pet in DrPet.Controller.Login.Login.UsuarioAtivo.Pets)
             {
                 Items.Add(pet.Nome);
                 Raca.Add(pet.Raca);

@@ -11,10 +11,22 @@ namespace DrPet
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new ContentPage
+            //MainPage = ;
+            var page = new NavigationPage(new ContentPage
             {
                 Content = new DrPet.Views.LoginForm()
-            });
+            })
+            {
+                BarBackgroundColor = Model.Constants.BackGroundColor,
+                BarTextColor = Color.Black,
+            };
+
+            MainPage = page; 
+                //new ContentPage()
+            //{
+            //    Content = new DrPet.Views.LoginForm()
+            //};
+
 
             //MainPage = new NavigationPage(new DrPet.Views.CadastroForm());
 

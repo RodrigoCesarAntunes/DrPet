@@ -11,6 +11,6 @@ namespace DrPet.Model
         public string Email { get; set; }
 
         
-        public List<Usuario> Usuario { get; set; }
+        public Usuario Usuario { get; set; }
     }
 }

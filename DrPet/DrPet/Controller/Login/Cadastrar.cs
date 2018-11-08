@@ -16,6 +16,7 @@ namespace DrPet.Controller.Login
         public Cadastrar()
         {
             client = new HttpClient();
+
             client.MaxResponseContentBufferSize = 256000;
         }
 

@@ -36,7 +36,7 @@ namespace DrPet.Controller.Mascotes
             }
             else
             {
-                string resposta = response.Content.ReadAsStringAsync().ToString();
+                string resposta = response.Content.ReadAsStringAsync().Result;
                 return resposta;
             }
 

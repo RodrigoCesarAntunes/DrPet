@@ -35,7 +35,7 @@ namespace DrPet.Views
 
         private async void btnConcluirCadastro_Clicked(object sender, EventArgs e)
         {
-            if(ChecarSenha())
+            if(!ChecarSenha())
             {
                 await App.Current.MainPage.DisplayAlert("Senhas diferentes", "As duas senhas precisam ser iguais", "OK");
                 return;
@@ -45,21 +45,19 @@ namespace DrPet.Views
             autenticacao.Senha = entrySenha.Text;
 
             Cliente_pessoa cliente_Pessoa = new Cliente_pessoa();
-            cliente_Pessoa.Usuario_Email = entryEmail.Text;
+            cliente_Pessoa.UsuarioEmail = entryEmail.Text;
 
             Usuario usuario = new Usuario();
             usuario.Autenticacao = autenticacao;
-            List<Cliente_pessoa> usuarios = new List<Cliente_pessoa>();
-            usuarios.Add(cliente_Pessoa);
-            usuario.Cliente_pessoa = usuarios;
+            usuario.ClientePessoa = cliente_Pessoa;
 
             usuario.Nome = entryNome.Text;
             usuario.Email = entryEmail.Text;
-            usuario.Cpf_Cnpj = entryCPF.Text;
+            usuario.CpfCnpj = entryCPF.Text;
             usuario.Celular = entryCelular.Text;
             usuario.Idade = Convert.ToInt16(entryIdade.Text);
             usuario.Endereco = entryEndereco.Text;
-            usuario.CEP = entryCEP.Text;
+            usuario.Cep = entryCEP.Text;
             try
             {
                 String resp;

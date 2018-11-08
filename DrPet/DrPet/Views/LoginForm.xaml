@@ -3,32 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DrPet.Views.LoginForm">
   <ContentView.Content>
+        <ScrollView>
+            <StackLayout x:Name="MasterLayout">
+                <StackLayout x:Name="Logo" VerticalOptions="FillAndExpand">
+                    <Image x:Name="iconeLogin" Source="cachorro.png" Margin="0,80,0,0"/>
+                    <Label x:Name="lblDrPet" Text="Dr Pet" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                </StackLayout>
 
-        <StackLayout x:Name="MasterLayout">
-            <StackLayout x:Name="Logo" VerticalOptions="FillAndExpand">
-                <Image x:Name="iconeLogin" Source="cachorro.png" Margin="0,80,0,0"/>
-                <Label x:Name="lblDrPet" Text="Dr Pet" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"/>
-            </StackLayout>
+                <StackLayout x:Name="LoginParametros" VerticalOptions="Start">
+                    <StackLayout.Padding>
+                        <OnIdiom x:TypeArguments="Thickness">
+                            <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                            <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+                        </OnIdiom>
+                    </StackLayout.Padding>
+                </StackLayout>
 
-            <StackLayout x:Name="LoginParametros" VerticalOptions="Start">
-                <StackLayout.Padding>
-                    <OnIdiom x:TypeArguments="Thickness">
-                        <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
-                        <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
-                    </OnIdiom>
-                </StackLayout.Padding>
+                <ActivityIndicator x:Name="rodadorAtividade" Color="White" IsRunning="True"/>
+                <StackLayout x:Name="Controles" VerticalOptions="StartAndExpand">
+                    <ActivityIndicator x:Name="indicadorAtividade"  VerticalOptions="Center" HorizontalOptions="Center" Color="White"/>
+                    <Label x:Name="lblEmail" Text="E-mail" />
+                    <Entry x:Name="entryEmail" Placeholder="Email" Keyboard="Email"></Entry>
+                    <Label x:Name="lblSenha" Text="Senha" />
+                    <Entry x:Name="entrySenha" Placeholder="Senha" IsPassword="True"></Entry>
+                    <Button x:Name="btnEntrar" Text="Entrar" Clicked="Entrar_Clicked"/>
+                    <Button x:Name="btnCriarConta" Text="Criar Conta" Clicked="CriarConta_Clicked"/>
+                </StackLayout>
             </StackLayout>
-
-            <ActivityIndicator x:Name="rodadorAtividade" Color="White" IsRunning="True"/>
-            <StackLayout x:Name="Controles" VerticalOptions="StartAndExpand">
-                <ActivityIndicator x:Name="indicadorAtividade"  VerticalOptions="Center" HorizontalOptions="Center" Color="White"/>
-                <Label x:Name="lblEmail" Text="E-mail" />
-                <Entry x:Name="entryEmail" Placeholder="Email" Keyboard="Email" ></Entry>
-                <Label x:Name="lblSenha" Text="Senha" />
-                <Entry x:Name="entrySenha" Placeholder="Senha" IsPassword="True"></Entry>
-                <Button x:Name="btnEntrar" Text="Entrar" Clicked="Entrar_Clicked"/>
-                <Button x:Name="btnCriarConta" Text="Criar Conta" Clicked="CriarConta_Clicked"/>
-            </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentView.Content>
 </ContentView>
