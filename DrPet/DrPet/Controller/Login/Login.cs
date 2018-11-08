@@ -25,11 +25,11 @@ namespace DrPet.Controller.Login
         public Login()
         {
             client = new HttpClient();
-           
+            string userDetail = (string)App.Current.Properties["UserDetail"];
 
-            if (App.Current.Properties.ContainsKey("UserDetail"))
+            if (App.Current.Properties.ContainsKey("UserDetail") && !String.IsNullOrEmpty(userDetail))
             {
-                Autenticacao aut = JsonConvert.DeserializeObject<Autenticacao>((string)App.Current.Properties["UserDetail"]);
+                Autenticacao aut = JsonConvert.DeserializeObject<Autenticacao>(userDetail);
                 autenticacao = aut;
                 email = aut.Email;
                 senha = aut.Senha;
@@ -124,7 +124,7 @@ namespace DrPet.Controller.Login
         {
             try
             {
-                App.Current.Properties["UserDetail"] = null;
+                App.Current.Properties["UserDetail"] = "";
                 App.Current.Properties["IsLoggedIn"] = Boolean.FalseString;
                 return true;
             }

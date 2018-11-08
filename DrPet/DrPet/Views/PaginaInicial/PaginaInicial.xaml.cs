@@ -32,18 +32,19 @@ namespace DrPet.Views.PaginaInicial
             if (item == null)
                 return;
             else if(item.Title == "Pagina Inicial")
-                Detail = new PaginaInicial() { Title = "Meus Bichinhos" };
+                Detail = new PaginaInicial() { Title = "Pagina Inicial" };
             else if(item.Title == "Meus Pets")
                 Detail = new NavigationPage( new Pets.MostrarPetsForm()) { Title = "Meus Bichinhos" };
-            
+            else if (item.Title == "Configurações")
+                Detail = new NavigationPage(new Views.ConfiguracoesForm()) { Title = "Configurações" };
+
             //var page = (Page)Activator.CreateInstance(item.TargetType);
             //page.Title = item.Title;
 
             //Navigation.PushAsync(page);
-             //Detail = new NavigationPage(new Pets.MostrarPetsForm()) { Title = "Meus Bichinhos"};
-            
-            IsPresented = false;
+            //Detail = new NavigationPage(new Pets.MostrarPetsForm()) { Title = "Meus Bichinhos"};
 
+            IsPresented = false;
             MasterPage.ListView.SelectedItem = null;
         }
     }
