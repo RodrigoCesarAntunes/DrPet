@@ -7,34 +7,28 @@
             <StackLayout>
 
                 <StackLayout x:Name="Formulario" Margin="20,20,20,0" VerticalOptions="StartAndExpand">
-                    <Label x:Name="lblNome" Text="Nome" VerticalOptions="Start" HorizontalOptions="Start" />
+                    
                     <Entry x:Name="entryNome" Placeholder="Nome" ></Entry>
 
-                    <Label x:Name="lblEmail" Text="E-mail" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Entry x:Name="entryEmail" Placeholder="E-mail" Keyboard="Email"></Entry>
 
-                    <Label x:Name="lblCPF" Text="CPF" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Entry x:Name="entryCPF" Placeholder="CPF" Keyboard="Numeric"></Entry>
 
-                    <Label x:Name="lblCelular" Text="Celular" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Entry x:Name="entryCelular" Placeholder="Celular" Keyboard="Telephone"></Entry>
 
-                    <Label x:Name="lblIdade" Text="Idade" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Entry x:Name="entryIdade" Placeholder="Idade" Keyboard="Numeric"></Entry>
 
-                    <Label x:Name="lblEndereco" Text="Endereço" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Entry x:Name="entryEndereco" Placeholder="Endereço" ></Entry>
 
-                    <Label x:Name="lblCEP" Text="CEP" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Entry x:Name="entryCEP" Placeholder="CEP" Keyboard="Numeric"></Entry>
 
-                    <Label x:Name="lblSenha" Text="Senha" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Entry x:Name="entrySenha" Placeholder="Senha" IsPassword="True"></Entry>
                     
-                    <Label x:Name="lblSenha2" Text="Senha" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Entry x:Name="entrySenha2" Placeholder="Confirmar Senha" IsPassword="True"></Entry>
+
+                    <Button x:Name="btnConcluirCadastro" Text="Concluir Cadastro" Clicked="btnConcluirCadastro_Clicked"/>   
                 </StackLayout>
-                <Button x:Name="btnConcluirCadastro" Text="Concluir Cadastro" Clicked="btnConcluirCadastro_Clicked"/>
+                
 
             </StackLayout>
         </ScrollView>

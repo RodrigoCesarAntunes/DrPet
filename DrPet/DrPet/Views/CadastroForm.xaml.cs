@@ -21,6 +21,11 @@ namespace DrPet.Views
 
         private void Init()
         {
+            
+            btnConcluirCadastro.BackgroundColor = Color.DimGray;
+            btnConcluirCadastro.TextColor = Color.White;
+            btnConcluirCadastro.BorderColor = Color.Black;
+            //btnConcluirCadastro.BorderRadius = 
             BackgroundColor = DrPet.Model.Constants.BackGroundColor;
             entryNome.Completed += (s, e) => entryEmail.Focus();
             entryEmail.Completed += (s, e) => entryCPF.Focus();

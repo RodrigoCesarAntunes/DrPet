@@ -21,13 +21,13 @@ namespace DrPet.Views
         {
             Controller.Login.Login login = new Controller.Login.Login();
             if (login.AnularDetalhesDoUsuario())
-                App.Current.MainPage = new NavigationPage(new ContentPage()
-                {
-                    Content = new LoginForm()
-                });
+            {
+                var paginaLogin = new ContentPage() {Content = new LoginForm()};
+                App.Current.MainPage = new NavigationPage(paginaLogin);
+                //Navigation.InsertPageBefore(paginaLogin, this);
+            }
             else
                 App.Current.MainPage.DisplayAlert("Erro", login.MensagemErro, "OK");
-
         }
 	}
 }

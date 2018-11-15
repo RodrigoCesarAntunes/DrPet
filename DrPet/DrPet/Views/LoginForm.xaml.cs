@@ -15,9 +15,7 @@ namespace DrPet.Views
 		{
             EntrarDireto();
             InitializeComponent();
-            Init();
-
-
+            Init();           
         }
 
         private async void EntrarDireto()

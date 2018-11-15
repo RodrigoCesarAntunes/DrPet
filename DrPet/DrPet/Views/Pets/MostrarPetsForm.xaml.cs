@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using DrPet.Model;
+using DrPet.Views.PaginaInicial;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -14,12 +15,17 @@ namespace DrPet.Views.Pets
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MostrarPetsForm : ContentPage
     {
-        public ObservableCollection<string> Items { get; set; }
+        public ObservableCollection<string> Nome { get; set; }
         public ObservableCollection<string> Raca { get; set; }
         public List<Model.Pets> Mascote { get; set; }
         public MostrarPetsForm()
         {
             InitializeComponent();
+            IniciarListaMascote();
+        }
+
+        public void IniciarListaMascote()
+        {
             listarPets();
             Mascote = DrPet.Controller.Login.Login.UsuarioAtivo.Pets.ToList();
             MyListView.ItemsSource = Mascote;
@@ -39,7 +45,7 @@ namespace DrPet.Views.Pets
         private void listarPets()
         {
             
-            Items = new ObservableCollection<string>();
+            Nome = new ObservableCollection<string>();
             Raca = new ObservableCollection<string>();
             if (DrPet.Controller.Login.Login.UsuarioAtivo.Pets ==null)
             {
@@ -48,7 +54,7 @@ namespace DrPet.Views.Pets
                
             foreach (var pet in DrPet.Controller.Login.Login.UsuarioAtivo.Pets)
             {
-                Items.Add(pet.Nome);
+                Nome.Add(pet.Nome);
                 Raca.Add(pet.Raca);
             }
             
