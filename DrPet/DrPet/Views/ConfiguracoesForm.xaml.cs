@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DrPet.Utils.UI;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -22,8 +23,11 @@ namespace DrPet.Views
             Controller.Login.Login login = new Controller.Login.Login();
             if (login.AnularDetalhesDoUsuario())
             {
-                var paginaLogin = new ContentPage() {Content = new LoginForm()};
-                App.Current.MainPage = new NavigationPage(paginaLogin);
+                var page = new  Pagina();
+                App.Current.MainPage = page.GerarPaginaNavegacao(
+                new DrPet.Views.LoginForm(),
+                Model.Constants.BackGroundColor,
+                Model.Constants.MainTextColor);
                 //Navigation.InsertPageBefore(paginaLogin, this);
             }
             else

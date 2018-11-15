@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using DrPet.Utils.UI;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace DrPet
@@ -12,17 +13,24 @@ namespace DrPet
             InitializeComponent();
 
             //MainPage = ;
-            var page = new NavigationPage(new ContentPage
-            {
-                Content = new DrPet.Views.LoginForm()
-            })
-            {
-                BarBackgroundColor = Model.Constants.BackGroundColor,
-                BarTextColor = Color.Black,
-            };
 
-            MainPage = page; 
-                //new ContentPage()
+            var page = new Pagina();
+            
+            //    new NavigationPage(new ContentPage
+            //{
+            //    Content = new DrPet.Views.LoginForm()
+            //})
+            //{
+            //    BarBackgroundColor = Model.Constants.BackGroundColor,
+            //    BarTextColor = Color.Black,
+            //};
+
+            MainPage = page.GerarPaginaNavegacao(
+                new DrPet.Views.LoginForm(), 
+                Model.Constants.BackGroundColor,
+                Model.Constants.MainTextColor); 
+            
+            //new ContentPage()
             //{
             //    Content = new DrPet.Views.LoginForm()
             //};

@@ -21,7 +21,7 @@ namespace DrPet.Views
 
         private void Init()
         {
-            
+            btnConcluirCadastro.BorderWidth = 1;
             btnConcluirCadastro.BackgroundColor = Color.DimGray;
             btnConcluirCadastro.TextColor = Color.White;
             btnConcluirCadastro.BorderColor = Color.Black;
