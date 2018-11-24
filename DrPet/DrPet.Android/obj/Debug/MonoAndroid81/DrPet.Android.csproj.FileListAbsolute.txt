@@ -4,6 +4,7 @@ C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\c
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\com.companyname.DrPet-Signed.apk
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\DrPet.dll
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\DrPet.pdb
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\DrPet.dll.mdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\DrPet.Android.csprojAssemblyReference.cache
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\res.flag
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\DrPet.Android.csproj.CoreCompileInputs.cache
@@ -54,10 +55,12 @@ C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\S
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\System.Xml.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\Xamarin.Forms.Core.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\DrPet.dll.mdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\FormsViewGroup.pdb
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\Xamarin.Forms.Platform.Android.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\DrPet.Android.pdb
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\Mono.Android.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\mscorlib.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\System.Core.pdb
@@ -65,6 +68,7 @@ C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\M
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\System.Xml.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\System.Xml.Linq.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Core.pdb
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Xaml.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\System.Data.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\System.Numerics.pdb
@@ -78,12 +82,9 @@ C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\M
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\System.Web.Services.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\Mono.Security.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\DrPet.dll.mdb
-C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
-C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\DrPet.dll.mdb
-C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\FormsViewGroup.dll.mdb
-C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\DrPet.Android.pdb
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\FormsViewGroup.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Android.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Security.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\mscorlib.pdb
@@ -102,10 +103,9 @@ C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\M
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.Linq.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
+C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet\bin\Debug\netstandard2.0\DrPet.dll
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\DrPet.Android.pdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\bin\Debug\DrPet.dll.mdb
 C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\DrPet.dll.mdb
-C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
-C:\Users\Rodrigo\Documents\App Repositorio\DrPet\DrPet\DrPet.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

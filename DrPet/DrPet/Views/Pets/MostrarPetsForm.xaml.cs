@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using DrPet.Model;
+using DrPet.Utils;
 using DrPet.Views.PaginaInicial;
 
 using Xamarin.Forms;
@@ -64,7 +65,7 @@ namespace DrPet.Views.Pets
 
         private async void AddPet_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CadastarEditarPetForm());
+            await PilhaDeNavegacao.Navegacao.PushAsync(new CadastarEditarPetForm());
         }
     }
 }

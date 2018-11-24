@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DrPet.Model;
 using DrPet.Controller.Login;
-
+using DrPet.Utils;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -23,9 +18,11 @@ namespace DrPet.Views.Pets
 
         private void initPickers()
         {
+            //Genero
             pickerGenero.Items.Add("Macho");
             pickerGenero.Items.Add("Femea");
 
+            //Peso
             pickerPeso.Items.Add("Menos de 1KG");
             pickerPeso.Items.Add("Entre 1KG e 5KG");
             pickerPeso.Items.Add("Entre 5KG e 10KG");
@@ -33,6 +30,7 @@ namespace DrPet.Views.Pets
             pickerPeso.Items.Add("Entre 15KG e 20KG");
             pickerPeso.Items.Add("Mais de 20KG");
 
+            //Tamanho
             pickerTamanho.Items.Add("Pequeno");
             pickerTamanho.Items.Add("Médio");
             pickerTamanho.Items.Add("Grande");
@@ -62,7 +60,12 @@ namespace DrPet.Views.Pets
 
             Login logar = new Login();
             await logar.GetUsuariotAsync();
-            App.Current.MainPage = new NavigationPage(new Pets.MostrarPetsForm());
+            //Navigation.InsertPageBefore(paginaLogin, this);
+            //App.Current.MainPage = new NavigationPage(new Pets.MostrarPetsForm());
+
+
+            await PilhaDeNavegacao.Navegacao.PopAsync();
+            //await Navigation.PushModalAsync(new Pets.MostrarPetsForm());
         }
     }
 }

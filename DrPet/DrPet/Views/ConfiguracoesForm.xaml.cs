@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DrPet.Utils.UI;
 
 using Xamarin.Forms;
@@ -25,7 +21,7 @@ namespace DrPet.Views
             {
                 var page = new  Pagina();
                 App.Current.MainPage = page.GerarPaginaNavegacao(
-                new DrPet.Views.LoginForm(),
+                new LoginForm(),
                 Model.Constants.BackGroundColor,
                 Model.Constants.MainTextColor);
                 //Navigation.InsertPageBefore(paginaLogin, this);

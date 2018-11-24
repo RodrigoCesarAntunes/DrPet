@@ -3,6 +3,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using DrPet.Model;
+using DrPet.Utils.UI;
+using DrPet.Utils;
 
 namespace DrPet.Views
 {
@@ -25,7 +27,7 @@ namespace DrPet.Views
             {
                 string resposta = await logar.GetUsuariotAsync();
                 if (resposta == "sucesso")
-                    App.Current.MainPage = new DrPet.Views.PaginaInicial.PaginaInicial();
+                    App.Current.MainPage = new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial()); //new DrPet.Views.PaginaInicial.PaginaInicial();
                 //await Navigation.PushModalAsync(new DrPet.Views.PaginaInicial.PaginaInicial());
                 //App.Current.MainPage = new DrPet.Views.PaginaInicial.PaginaInicial();
 
@@ -54,8 +56,10 @@ namespace DrPet.Views
             resposta = await logar.GetUsuariotAsync();
             if (resposta == "sucesso")
             {
-                App.Current.MainPage = new DrPet.Views.PaginaInicial.PaginaInicial();
-                //new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial());
+                
+                App.Current.MainPage =
+                    new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial());
+                //new NavigationPage(new DrPet.Views.PaginaInicial.PaginaInicial()); new NavigationPage(DrPet.Views.PaginaInicial.PaginaInicial());
                 indicadorAtividade.IsRunning = false;
             }
             else
